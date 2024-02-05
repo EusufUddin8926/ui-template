@@ -13,7 +13,47 @@ class _HomeAppBarDemoState extends State<HomeAppBarDemo> {
     return Container(
       child: Row(
         children: [
-
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Welcome Home",
+                style: TextStyle(fontSize: 35),
+              ),
+              Text(
+                "Annie Bryant",
+                style: TextStyle(fontSize: 35),
+              ),
+            ],
+          ),
+          SizedBox(width: 20,),
+          Row(
+            children: [
+              Container(
+                transform: Matrix4.rotationZ(100),
+                child: Stack(
+                  children: [
+                    Icon(
+                      Icons.notifications_none_outlined,
+                      size: 45,
+                      color: Colors.black,
+                    ),
+                    Positioned(
+                        width: 10,
+                        height: 10,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.pink,
+                              borderRadius: BorderRadius.circular(50)),
+                        )),
+                    
+                  ],
+                ),
+              )
+            ],
+          ),
+          SizedBox(width: 20,),
+          ClipOval(child: Image.asset("images/ic_man.png", width: 50, height: 50,),)
         ],
       ),
     );
