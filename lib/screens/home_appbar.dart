@@ -13,18 +13,21 @@ class _HomeAppBarDemoState extends State<HomeAppBarDemo> {
     return Container(
       child: Row(
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Welcome Home",
-                style: TextStyle(fontSize: 35),
-              ),
-              Text(
-                "Annie Bryant",
-                style: TextStyle(fontSize: 35),
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Welcome Home",
+                  style: TextStyle(fontSize: 35),
+                ),
+                Text(
+                  "Annie Bryant",
+                  style: TextStyle(fontSize: 35),
+                ),
+              ],
+            ),
           ),
           SizedBox(width: 20,),
           Row(

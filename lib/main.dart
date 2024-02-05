@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_template/screens/home_appbar.dart';
+import 'package:ui_template/screens/search_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,7 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Column(
             children: [
-              HomeAppBarDemo()
+              HomeAppBarDemo(),
+              SizedBox(height: 10,),
+              SearchDemo()
             ],
           )
         ],
